@@ -1,0 +1,425 @@
+// Place all the styles related to the user controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* 共通 */
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body {
+        font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    line-height: 1.7;
+    color: black;
+    font-size:1rem;
+    font-weight:bold;
+    line-height: 2rem;
+}
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.section_logo img{
+    height: 52px;
+}
+.section_logo{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.button:hover{
+    opacity: 0.5;
+    color: white;
+    transition: 0.3s;
+}
+
+// ハンバーガー
+
+.hamburger{
+    display: none;
+}
+.hamburger_nav a{
+    border-bottom: 1px solid #fff;
+    padding-top: 20px;
+    display: block;
+    color:#fff;
+}
+.hamburger a:hover{
+    color: #777;
+    text-decoration: none;
+    opacity: 0.5;
+}
+/* ヘッダー */
+header{
+    z-index: 10;
+    position: absolute;
+    width:100%;
+    padding: 50px;
+    display: flex;
+}
+header a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+    color:#FFF;
+    transition: 0.3s;
+
+}
+header h1{
+    display: inline;
+    margin-right:1rem;
+    flex:1;
+    
+}
+header a{ 
+    color:#FFF;
+    text-shadow:0 0 10px #777;
+}
+.header-top{
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: auto;
+}
+header nav{
+    width:40%;
+    /* flex:1; */
+    margin-left:auto;
+}
+
+.main-nav {
+    display: flex;
+    margin-top: 30px;
+}
+header li{
+    flex: 1;
+    text-align: center;
+    /* border-right: 2px solid gray; */
+}
+
+/* メイン */
+.main-view{
+    background-image: url(/assets/view_1.jpg);
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+}
+.main-view h1{
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #777;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;    
+    line-height: 3rem;
+}
+.main-view span{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/* サービス */
+.service-wrapper{
+    margin: 100px 0;
+}
+.service-wrapper h5{
+    color: #777;
+}
+.service-container{
+    width: 60%;
+    margin: 50px auto;
+}
+.service-container .service_icon{
+    margin:0 auto;
+}
+.service-container .text{
+    width:80%;
+    margin: 0 auto;
+}
+.service-container h5{
+    display: inline;
+}
+.service-wrapper h4{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.service-wrapper small{
+    margin-left: 10px;
+    font-size: small;
+}
+.service-wrapper .service_icon{
+    /* margin: 0 auto; */
+    text-align: center;
+    height: 120px;
+    width: 120px;
+}
+.lp{
+    margin:0 auto ;
+    text-align: center;
+    width: 50%;
+    
+    padding: 0 100px;
+}
+.service-wrapper p{
+    text-align: left;
+    padding-top: 20px;
+    font-weight: normal;
+    color: #777;
+}
+
+/* ワークス */
+.works-wrapper{
+    background-color:#D6E7F7;
+    padding: 100px 0;
+
+}
+.works-wrapper h4{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.works-content{
+    padding: 50px 0;
+}
+
+.work-slide img{
+    height: 300px;
+    width: 300px;
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 10px #777;
+}
+.work-slide li{
+    flex: 1;
+    text-align: center;
+}
+.work-slide img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/* アバウト */
+.about_wrapper{
+    padding:100px 0;
+}
+.about_wrapper .contents{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.about_bully{
+    flex: 1;
+}
+
+.about_wrapper .about_circle{
+    border: 3px solid black;
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+
+}
+.card{
+    margin-top: 50px;
+    box-shadow: 0 0 10px #777;
+}
+.about_cards{
+    flex: 2;
+}
+
+.card-header{
+    background-color: #D6E7F7;
+}
+.about_wrapper h5{
+    font-weight: bold;
+}
+.about_wrapper p{
+    color: #777;
+    font-weight: normal;
+}
+
+/* スキル */
+.skills_wrapper{
+    background-color: #D6E7F7;
+    padding: 100px 0;
+}
+.graph_wrapper{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 50px;
+    background-color: #FFF;
+    padding: 30px 10px;
+    border: 1px solid #777;
+    box-shadow: 0 0 10px #777;
+}
+.graph_wrapper p{
+    text-align: right;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #777;
+}
+.graph_container{
+    margin-bottom: 20px;
+}
+.graph {
+    position: relative; /* IE is dumb */
+    width: 100%;
+    border: 1px solid #777;
+    padding: 2px;
+    height: 50px;
+}
+.graph .bar {
+    display: block;
+    position: relative;
+    background: #777;
+    text-align: center;
+    color: #777;
+    height: available;
+}
+.graph .bar span { position: absolute; left: 1em; }
+
+
+/* プライス */
+.price-wrapper{
+    padding: 100px 0;
+}
+.price-wrapper span{
+    font-size: 0.5rem;
+    padding-left: 1rem;
+}
+.price-wrapper table{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #777;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    border-collapse: separate;
+    background-color: whitesmoke;
+    
+}
+.price-wrapper th{
+    text-align: center;
+    border: 1px solid black;
+    width: 40%;
+    padding: 50px 10px;
+    
+}
+.price-wrapper td{
+    border: 1px solid black;
+    padding-left:1rem;
+    font-size: 2rem;
+
+}
+.price-wrapper p{
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: normal;
+    color: #777;
+}
+/* コンタクト */
+.contact-wrapper{
+    background-color: #D6E7F7;
+    padding: 100px 0;
+}
+.contact_form{
+    width:50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+.contact_form p{
+    text-align: center;
+    font-weight: normal;
+    color: #777;
+}
+.contact_form .text{
+    height: 50px;
+    background-color: #fff;
+    color: #777;
+    box-shadow: 0 0 10px #777;
+
+}
+.contact_form .select{
+    box-shadow: 0 0 10px #777;
+    
+}
+.contact_form .textarea{
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #777;
+}
+
+.contact_button{
+    border: 2px solid #fff;
+    border-bottom: none;
+    background-color: #fff;
+    padding: 5px 30px;
+    border-radius: 5%;
+    margin: 0 auto;
+    display: block;
+    box-shadow:5px 10px  #777;
+    color: #777;
+}
+.contact_button:hover{
+    background-color: #D6E7F7;
+    transition: 0.3s;
+}
+.contact_button:active{
+    border-color: red;
+    border-color: #D6E7F7;
+    box-shadow: none;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    transition: 0.3s;
+}
+button:focus { outline:0; }
+
+@media screen and (max-width:1000px){
+    // .container-fluid{}
+}
+@media screen and (max-width: 576px){
+    .hamburger{
+        display: block;
+        
+    }
+    .hamburger, .main-view, .service-wrapper, .works-wrapper, .about_wrapper, .skills_wrapper, .price-wrapper, .contact-wrapper{
+        width: 500px;
+    }
+    header nav{
+        display: none;
+    }
+    .service-wrapper .lp{
+        padding-bottom: 30px;
+    }
+    .work-slide li{
+        padding-bottom: 30px;
+    }
+    // .about_wrapper 
+    .skills_wrapper .graph_wrapper{
+        width: 90%;
+    }
+
+    .price-wrapper table{
+        width: 90%;
+    }
+    .contact-wrapper .contact_form{
+        width: 90%;
+    }
+    
+}

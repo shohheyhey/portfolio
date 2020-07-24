@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebina shohei</title>
+    <meta name="descrioption" content="ポートフォリオトップページ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="top.css">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+</head>
+<body>
+<div class="pos-f-t hamburger">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+                <ul class="hamburger_nav">
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </nav>
+</div>
+<div class="">
+
+    <!-- ヘッダー -->
+    <header class="wrapper">
+    
+        <div class="header-top">
+            <%= link_to top_path do %>
+                <h1>CreatedByShow</h1>
+            <% end %>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#service">Service</a></li>
+                <li><a href="#works">Works</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- メイン開始 -->
+    <section class="main-view">
+        <main class="wrapper">
+            
+                <h1>Hello, World<br>
+                    <span>I'm Shohei Ebina, a MarkUp Engineer</span>
+                </h1>
+            </section>
+
+            <!-- service -->
+            <section id="service" class="wrapper service-wrapper">
+                <div class="section_logo">
+                    <img src="/assets/logo_service.png" alt="">
+                </div>
+                <div class="service-container">
+                    <div class="container">  
+                        <div class="row">
+                            <article class="col-lg-6 col-md-12 lp">
+                                <div class="service_icon"><i class="fas fa-newspaper fa-7x"></i></div>
+                                <h5>WEBサイト(LP)制作</h5>
+                                <div class="text">
+                                    <p>シンプルなランディングページを作成致します。<br>
+                                        ヒアリングに沿ってデザインを制作し、ユーザー目線を常に意識することを心がけています。<br>
+                                        納期に関しては相談の上、厳守いたします。
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="col-lg-6 col-md-12 lp">
+                                <div class="service_icon"><i class="fas fa-code fa-7x"></i></div>
+                                <h5>HTML コーデイング</h5>
+                                <div class="text">
+                                    <p>
+                                        デザインに忠実なコーディングを心がけています。
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- works -->
+            <section id="works" class="wrapper works-wrapper">
+                <div class="section_logo">
+                    <img src="/assets/logo_works.png" alt="">
+                </div>
+                <div class="works-content">
+                    <ul>
+                    <article class="work-slide">
+                        <div class="container"> 
+                            <div class="row">
+                                    <li class="col-lg-6 col-sm-12 col-md-12">
+                                        <a target="_blank" href="14_roulette.html"><img src="/assets/roulette.png" alt="ルーレット"></a>
+                                    </li>
+                                    <li class="col-lg-6 col-sm-12 col-md-12">
+                                        <a target="_blank" href="cookcamp.html"><img src="/assets/cookcamp.png" alt="クックキャンプ"></a>
+                                    </li>
+                                </div>
+                            </div>
+                        </article>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section id="about" class="wrapper about_wrapper">
+                <div class="section_logo">
+                    <img src="/assets/logo_about.png" alt="">
+                </div>
+                <div class="contents">
+                    <div class="about_bully">
+                        <a href="" class="about_circle"></a>
+                        <a href="" class="about_circle"></a>
+                        <a href="" class="about_circle"></a>
+                        <a href="" class="about_circle"></a>
+                    </div>
+                    <div class="about_cards">
+                        <div class="card bg-light mb-3" style="width:100%; margin-top: 0;">
+                            <div class="card-header ">1995 - 2012</div>
+                            <div class="card-body">
+                              <h5 class="card-title">青森生まれ。青森育ち。</h5>
+                              <p class="card-text">野球づけの日々を過ごしていました。高校ではキャッチャーをしており、毎日白球を追いかけていた記憶があります。</p>
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="width:100%;">
+                            <div class="card-header">2012 - 2015</div>
+                            <div class="card-body">
+                              <h5 class="card-title">医療系の専門学校へ進学</h5>
+                              <p class="card-text">人の体と健康について関心があったため、柔道整復師免許を取得しました。勉強会、セミナーには誰よりも参加していたため、全国模試３位という成績を収めることができました。</p>
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="width:100%;">
+                            <div class="card-header">2017-2021</div>
+                            <div class="card-body">
+                              <h5 class="card-title">大学院へ進学。研究に挫折。プログラミングに出会う。</h5>
+                              <p class="card-text">人の体についてもっと学びたいと思い、医学生に混じって研究を行っておりました。研究が上手くいかず、気分転換にプログラミングを勉強しているうちに楽しくなり、Web制作にも関心が生まれました。
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section id="skills" class="wrapper skills_wrapper">
+                <div class="section_logo">
+                    <img src="/assets/logo_skills.png" alt="">
+                </div>
+                <div class="graph_wrapper">
+                    <div class="container graph_container">
+                        <div class="row"> 
+                            <p class="col-3 sm-6 md-3">HTML / CSS</p>
+                            <div class="col-9 sm-6 md-3 graph" style="padding:0px; ">  
+                                <span class="bar" style="line-height:50px; height:100%; width: 65%; background-color: #FFCCFF; opacity: 0.8;">65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container graph_container">
+                        <div class="row"> 
+                            <p class="col-3 sm-6 md-3">JavaScript / jQuery</p>
+                            <div class="col-9 sm-6 md-3 graph" style="padding:0px">
+                                <span class="bar" style="line-height:50px; height:100%;  width: 55%; background-color: #FFFF00;">55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container graph_container">
+                        <div class="row"> 
+                            <p class="col-3 sm-6 md-3">Ruby / Ruby on Rails</p>
+                            <div class="col-9 sm-6 md-3 graph" style="padding:0px">
+                                <span class="bar" style="line-height:50px;  height:100%; width: 60%; background-color: #CC0000;">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                </div>
+            </section>
+            <!-- Price -->
+            <section id="price" class="wrapper price-wrapper">
+                <div class="section_logo">
+                    <img src="/assets/logo_price.png" alt="">
+                </div>
+                <table>
+                    <tr>
+                        <th>HTMLコーディングトップページ</th>
+                        <td>30,000<span>円〜<span></td>
+                    </tr>
+                    <tr>
+                        <th>HTMLコーディング下層1ページ</th>
+                        <td>10,000<span>円〜</span></td>
+                    </tr>
+                </table>
+                <p>※デザインデータからのコーディングを想定しています。<br>このほかにご要望があればご相談ください。</p>
+            </section>
+
+
+            <!-- Contact -->
+            <section id="contact" class="wrapper contact-wrapper">
+                <div class="section_logo">
+                    <img src="/assets/logo_contact.png" alt="">
+                </div>
+                <div class="contact_form">
+                    <p>Web制作の依頼などお気軽にご相談ください</p>
+                    <form>
+                        <div class="form-group">
+                          <input type="email" class="form-control text" id="exampleFormControlInput1" placeholder="メールアドレス">
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control select" style="color:#777;" id="exampleFormControlSelect1">
+                            <option value="">お問い合わせ種別をご選択ください</option>
+                            <option value="1">仕事のご依頼</option>
+                            <option value="2">その他</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control textarea" id="exampleFormControlTextarea1" rows="3" placeholder="お問い合わせ内容"></textarea>
+                        </div>
+                        <button type="submit" class="contact_button">送信する</button>
+                    </form>
+                </div>
+            </section>
+                
+
+        </main>
+<!-- メイン終わり -->
+
+    <!-- フッター -->
+    <footer>
+
+    </footer>
+</div>
+    <script>
+        $(document).ready(function(){
+            $(".work-slide").slick({
+                autoplay:true
+            });
+        });
+    </script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
